@@ -8,5 +8,13 @@ handlers:
   static_files: vansearch.html
   upload: vansearch.html
 
+- url: /favicon-128.png
+  static_files: favicon-128.png
+  upload: favicon-128.png
+
+- url: /apple-touch-icon.png
+  static_files: apple-touch-icon.png
+  upload: apple-touch-icon.png
+
 - url: .*
   script: main.py
