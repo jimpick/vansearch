@@ -1,0 +1,12 @@
+application: vansearch
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /
+  static_files: vansearch.html
+  upload: vansearch.html
+
+- url: .*
+  script: main.py
