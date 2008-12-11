@@ -2,8 +2,102 @@
 <html>
 <head>
 <title>VanSearch.ca - Vancouver Search</title>
+<link rel="icon" href="/favicon.ico" />
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<style type="text/css">
+@import url(http://www.princexml.com/fonts/larabie/index.css) all;
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  background-color: #FFF;
+  align: center;
+  margin: 1em 1em 1em 1em;
+}
+
+a {
+  text-decoration: none;
+        /* color: #000; */
+}
+
+h1 {
+	font: 2.3em "Neuropol", Verdana, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+p {
+	font-size: 50%;
+	display: inline;
+	padding: 0.5em;
+}
+
+a {
+	text-decoration: none;
+	color: #7BCC72;
+}
+
+#container {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: table;
+}
+
+#container2 {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 200%;
+}
+
+@media only screen and (max-device-width: 480px) {
+	#container2 {
+		font-size: 100%;
+	}
+}
+
+#center_panel {
+	display: block;
+	margin: 1em auto;
+	width: 20em;
+        height: 11.5em;
+        padding: 0.5em;
+        background-color: #EEE;
+        text-align: center;
+    	-moz-border-radius: 0.5em;
+    	-webkit-border-radius: 0.5em;
+        font-size: 80%;
+        position: relative}
+
+#notes { padding-top: 1.5em; }
+</style>
 </head>
 <body>
-<h1>VanSearch.ca</h1>
+
+<div id="container">
+<div id="container2">
+
+<div id="center_panel">
+<h1><span style="color:#4D8047;">Van</span><span style="color:#7BCC72">Search</a><span style="color:#333">.</span><span style="color:#e00">ca</span></h1>
+<form action="http://www.google.com/cse" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cref" value="http://vanbase.jpick.user.dev.freebaseapps.com/gcse_context" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="20" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
+<div id="notes">
+<p><a href="http://vancouver.freebase.com/">Vanbase</a></p>
+<p><a href="http://freebase.com/">Freebase</a></p>
+<p><a href="http://creativecommons.org/licenses/by/2.0/">CC-BY</a></p>
+<p><a href="http://jimpick.com/">Jim Pick</a></p>
+</div>
+
+</div> <!-- center_panel -->
+
+</div> <!-- container2 -->
+</div> <!-- container -->
+
 </body>
 </html>
